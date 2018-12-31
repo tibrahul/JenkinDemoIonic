@@ -16,12 +16,6 @@ pipeline {
             } 
         }
 
-        stage('Android Build') {
-            steps {
-                sh 'ionic cordova build android --release'
-            }
-        }
-
         stage('APK Sign') {
             steps {
                 // sh 'npm run apiSign'
